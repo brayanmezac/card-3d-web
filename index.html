@@ -233,13 +233,14 @@
       </div>
 
       <a-scene mindar-image="
-      imageTargetSrc: ./mind/targets.mind; 
+      imageTargetSrc: mind/targets.mind; 
       showStats: false; 
       uiScanning: #example-scanning-overlay;
       " embedded color-space="sRGB" 
       renderer="colorManagement: true, 
       physicallyCorrectLights" 
-      vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      vr-mode-ui="enabled: false" 
+      device-orientation-permission-ui="enabled: false">
         <a-assets>
           <img id="card" src="./assets/card-example/card.jpg" />
           <img id="icon-web" src="./assets/card-example/icons/web.png" />
