@@ -28,11 +28,11 @@
 
         let currentTab = '';
         webButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "https://softmind.tech");
+          text.setAttribute("value", "www.ColombianDevs.com");
           currentTab = 'web';
         });
         emailButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "hello@softmind.tech");
+          text.setAttribute("value", "colombianDevs@contacto.com");
           currentTab = 'email';
         });
         profileButton.addEventListener('click', function (evt) {
@@ -41,13 +41,13 @@
         });
         locationButton.addEventListener('click', function (evt) {
           console.log("loc");
-          text.setAttribute("value", "Vancouver, Canada | Hong Kong");
+          text.setAttribute("value", "Medellin | Colombia");
           currentTab = 'location';
         });
 
         text.addEventListener('click', function (evt) {
           if (currentTab === 'web') {
-            window.location.href="https://softmind.tech";
+            window.location.href="https://colombiandevs.com";
           }
         });
       }
@@ -233,7 +233,7 @@
       </div>
 
       <a-scene mindar-image="
-      imageTargetSrc: mind/targets.mind; 
+      imageTargetSrc: ./targets4.mind; 
       showStats: false; 
       uiScanning: #example-scanning-overlay;
       " embedded color-space="sRGB" 
@@ -257,7 +257,8 @@
           <img id="coffeemachine-preview" src="./assets/card-example/portfolio/coffeemachine-preview.png" />
           <img id="peak-preview" src="./assets/card-example/portfolio/peak-preview.png" />
           
-          <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>
+          <a-asset-item id="avatarModel" 
+          src="Logo_ColDevs2.gltf"></a-asset-item>
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
